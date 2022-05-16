@@ -1,6 +1,5 @@
 <Server port="${tomcat.internalserver.port}" shutdown="SHUTDOWN">
 
-	<Listener className="org.apache.catalina.mbeans.JmxRemoteLifecycleListener" rmiRegistryPortPlatform="${tomcat.jmx.port}" rmiServerPortPlatform="${tomcat.jmx.server.port}"/>
   <Listener className="tom.cat.Listener" context="GenericJavaBeanResource"/>
 
 	<GlobalNamingResources>
